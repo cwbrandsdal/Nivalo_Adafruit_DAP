@@ -1,5 +1,18 @@
-# Adafruit_DAP
-Port of Free-DAP + edbg CMSIS-DAP controller software to Arduino
+# Nivalo Adafruit DAP
+
+Nivalo's maintained fork of Adafruit DAP for ESP32-to-STM32 SWD firmware
+operations. It is based on upstream Adafruit DAP `1.8.3` at commit
+`8ca356d92e73d0d1005534030849e7ca37324805` and retains the upstream BSD
+license.
+
+The deliberately small Nivalo delta adds STM32 device ID `0x421` and pins the
+library identity/dependency metadata used by the Nivalo firmware release. The
+authoritative integration, archive validation, and guarded registry publication
+workflow live in [nivalo-esp32](https://github.com/cwbrandsdal/nivalo-esp32).
+
+## Upstream project description
+
+Port of Free-DAP + edbg CMSIS-DAP controller software to Arduino.
 
 This is a library that allows you to program various Cortex M chips that support programming via DAP from an arduino-compatible board. Tested with a Metro M0 / Arduino Zero as the 'host' and with ATSAMDxx M0 (SAMD21, SAMD09, SAMD10 etc), M4 ATSAMD51, nRF51, nRF52840, STM32F405 as the client but in theory any 3.3V Arduino board will work as host (just slower)
 
