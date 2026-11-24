@@ -10,6 +10,9 @@ library identity/dependency metadata used by the Nivalo firmware release. The
 authoritative integration, archive validation, and guarded registry publication
 workflow live in [nivalo-esp32](https://github.com/cwbrandsdal/nivalo-esp32).
 
+CI compiles `examples/ci-compile`, a small STM32 programming consumer, for the
+Feather ESP32 against this checkout (`pio run -d examples/ci-compile`).
+
 ## Upstream project description
 
 Port of Free-DAP + edbg CMSIS-DAP controller software to Arduino.
